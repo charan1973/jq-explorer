@@ -1,46 +1,82 @@
 {
-    "quiz": {
-        "sport": {
-            "q1": {
-                "question": "Which one is correct team name in NBA?",
-                "options": [
-                    "New York Bulls",
-                    "Los Angeles Kings",
-                    "Golden State Warriros",
-                    "Huston Rocket"
-                ],
-                "answer": "Huston Rocket"
+  "string": "Hello, World!",
+  "integer": 42,
+  "float": 3.14159,
+  "boolean": true,
+  "null_value": null,
+  "array": [
+    "text",
+    "another text",
+    "more text"
+  ],
+  "object": {
+    "level1": {
+      "level2": {
+        "level3": {
+          "text": "deeply nested",
+          "number": 99,
+          "boolean": false,
+          "array": [
+            {
+              "id": 1,
+              "name": "Alice"
+            },
+            {
+              "id": 2,
+              "name": "Bob",
+              "details": {
+                "age": 25,
+                "hobbies": ["reading", "gaming", "coding"]
+              }
             }
-        },
-        "maths": {
-            "q1": {
-                "question": "5 + 7 = ?",
-                "options": [
-                    "10",
-                    "11",
-                    "12",
-                    "13"
-                ],
-                "answer": "12"
-            },
-            "q2": {
-                "question": "12 - 8 = ?",
-                "options": [
-                    "1",
-                    "2",
-                    "3",
-                    "4"
-                ],
-                "answer": "4"
-            },
-            "nested": [
-                {
-                    "all": "hi"
-                },
-                {
-                    "all": "java dev"
-                }
-            ]
+          ]
         }
+      }
+    },
+    "users": [
+      {
+        "id": "u1",
+        "info": {
+          "name": "John Doe",
+          "contacts": {
+            "email": "john@example.com",
+            "phone": "+123456789"
+          },
+          "preferences": {
+            "notifications": true,
+            "theme": "dark"
+          }
+        }
+      },
+      {
+        "id": "u2",
+        "info": {
+          "name": "Jane Smith",
+          "contacts": {
+            "email": "jane@example.com",
+            "phone": null
+          },
+          "preferences": {
+            "notifications": false,
+            "theme": "light"
+          }
+        }
+      }
+    ]
+  },
+  "deep_nested": {
+    "a": {
+      "b": {
+        "c": {
+          "d": {
+            "e": {
+              "f": {
+                "g": "Very deep!"
+              }
+            }
+          }
+        }
+      }
     }
+  }
 }

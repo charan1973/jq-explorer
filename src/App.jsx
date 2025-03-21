@@ -13,7 +13,6 @@ function App() {
     for (let i = 0; i < selected.namespace.length; i++) {
       if (!isNaN(selected.namespace[i])) {
         jq += "[]"
-        i++
       } else {
         jq = (i == 0 ? "" : jq) + "." + selected.namespace[i]
       }
@@ -21,7 +20,7 @@ function App() {
     if (!isNaN(selected.name)) {
       jq += "[]"
     } else {
-      jq = jq + "." + selected.name
+      jq = (selected.namespace.length == 0 ? "" : jq) + "." + selected.name
     }
     setExp(jq)
   }
