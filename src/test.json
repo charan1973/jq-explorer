@@ -19,7 +19,11 @@
           "array": [
             {
               "id": 1,
-              "name": "Alice"
+              "name": "Alice",
+              "details": {
+                "age": 25,
+                "hobbies": ["keyboard"]
+              }
             },
             {
               "id": 2,
